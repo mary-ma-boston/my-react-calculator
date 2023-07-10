@@ -1,0 +1,46 @@
+.calculator {
+    width: 20rem;
+    height: 30rem;
+    display: grid;
+    margin: auto;
+
+    background-color: lightcyan;
+    padding: 1%;
+    border: ridge;
+
+}
+
+.screen {
+    border-color: black;
+    border: ridge;
+    text-align: right;
+    padding-right: 10%;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.result {
+    min-height: 3rem;
+    color: #666666;
+}
+
+.keys-function {
+    grid-area: keys-function;
+}
+
+.keys-operators {
+    grid-area: keys-operators;
+}
+
+.keys-numbers {
+    grid-area: keys-numbers;
+  
+}
+
+.keypad {
+
+    display: grid;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(5, 5rem);
+    grid-template-areas: "keys-function keys-function keys-function keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators" "keys-numbers keys-numbers keys-numbers keys-operators";
+}
